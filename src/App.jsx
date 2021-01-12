@@ -6,6 +6,6 @@ import Episodios from './rickAndMorty/Episodios.jsx';
 
 export default props => 
     <div className="App">
-        <h1>Fundamentos React</h1>
+        <h1>Episodios Rick And Morty</h1>
             <Episodios/>
     </div>
