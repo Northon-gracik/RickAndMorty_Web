@@ -1,0 +1,17 @@
+
+.App{
+    display: flex;
+    flex-direction: column; 
+    color: #e9e7e7;
+}
+
+
+
+.But{
+    padding: 8px 16px;
+    background-color: #bfff9f;
+    border-radius: 10px;
+    border: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}

@@ -1,0 +1,27 @@
+.view{
+    background-color: gray;
+    margin-vertical: 3px; 
+    height: 200px;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    min-width: 300px;
+    overflow: hidden;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+
+
+.container{
+    display: inline-flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start
+}
