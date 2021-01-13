@@ -9,6 +9,7 @@ import teste from './rickAndMorty/teste'
 import Localizacoes from './rickAndMorty/Localizacoes';
 import Home from './rickAndMorty/Home';
 import Footer from './Footer';
+import Episodios from './rickAndMorty/Episodios';
 
 
 ReactDOM.render(
@@ -16,7 +17,7 @@ ReactDOM.render(
         <NavBar/>
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/hello" component={teste}/>
+            <Route exact path="/episodios" component={Episodios}/>
             <Route exact path="/localizacoes" component={Localizacoes}/>
         </Switch>
         <Footer/>
