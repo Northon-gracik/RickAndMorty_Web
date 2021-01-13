@@ -7,15 +7,19 @@ import App from './App.jsx'
 import NavBar from './rickAndMorty/NavBar'
 import teste from './rickAndMorty/teste'
 import Localizacoes from './rickAndMorty/Localizacoes';
+import Home from './rickAndMorty/Home';
+import Footer from './Footer';
+
 
 ReactDOM.render(
     <BrowserRouter>
         <NavBar/>
         <Switch>
-            <Route exact path="/" component={App}/>
+            <Route exact path="/" component={Home}/>
             <Route exact path="/hello" component={teste}/>
             <Route exact path="/localizacoes" component={Localizacoes}/>
         </Switch>
+        <Footer/>
     </BrowserRouter>,
     document.getElementById('root')
 )
