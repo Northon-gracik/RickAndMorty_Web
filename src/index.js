@@ -17,7 +17,9 @@ ReactDOM.render(
         <NavBar/>
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/episodios" component={Episodios}/>
+            <Route exact path="/episodios" component={Episodios}>
+                
+            </Route>
             <Route exact path="/localizacoes" component={Localizacoes}/>
         </Switch>
         <Footer/>
