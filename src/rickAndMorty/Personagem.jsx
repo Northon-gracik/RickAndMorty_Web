@@ -6,7 +6,7 @@ export default props => {
     
     return (
         <div>
-            <p>{props.url}</p>
+            <person/>
         </div>
     )
 }
