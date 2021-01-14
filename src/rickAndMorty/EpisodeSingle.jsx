@@ -2,6 +2,8 @@ import React from 'react'
 
 export default props =>{
     return (
-        <h1>Episodios</h1>
+        <div>
+            <h1>{props.params.id}</h1>
+        </div>
     )
 } 
