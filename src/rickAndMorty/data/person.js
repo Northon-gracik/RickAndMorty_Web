@@ -3,8 +3,11 @@ import { useState } from 'react'
 
 
 export default props => {
-    axios.get(`https://rickandmortyapi.com/api/character/1`)
-        .then(resp => resp)
+    async function obterPerson() {
+        const resp= await axios.get(`https://rickandmortyapi.com/api/character/1`)
+        return resp.data
+    }
+    window.alert(obterPerson());
 }
         
   
