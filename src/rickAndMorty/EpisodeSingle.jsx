@@ -7,7 +7,7 @@ import person, {teste} from './data/person.js'
 export default props =>{
     // props.match.params.id
     var episodio = episodios.filter(episodio => episodio.id == props.match.params.id)[0]
-    window.alert(JSON.stringify(person()))
+    person();
     return (
         <div>
             <h1>Episodio: {episodio.name}</h1>
