@@ -1,3 +1,7 @@
 import React from 'react'
 
-export default props => <h1>Episodios</h1>
+export default props =>{
+    return (
+        <h1>Episodios</h1>
+    )
+} 
