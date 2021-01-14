@@ -19,9 +19,7 @@ ReactDOM.render(
         <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/episodios" component={Episodios}/>
-            <Route exact path="/episodios" component={Episodios}>
-                <Route exact path=":id" component={EpisodeSingle}/>
-            </Route>
+            <Route exact path="/episodios/:id" component={EpisodeSingle}/>
             <Route exact path="/localizacoes" component={Localizacoes}/>
         </Switch>
         <Footer/>
