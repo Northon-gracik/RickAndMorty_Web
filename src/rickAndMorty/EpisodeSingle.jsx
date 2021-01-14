@@ -11,11 +11,11 @@ export default props =>{
             <h1>Episodio: {episodio.name}</h1>
             <h2>{episodio.air_date}</h2>
             <Personagem url={episodio.character[0]}/>
-            {/*{episodio.character.map(character => (
+            {/* {episodio.character.map(character => (
                 <li>
                     <Personagem url={character}/>
                 </li>
-            ))}*/}
+            ))}  */}
         </div>
         )
     } 
