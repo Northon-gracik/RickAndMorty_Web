@@ -1,8 +1,9 @@
 import React from 'react'
 import axios from './data/axios'
 import episodios from './data/episodios'
-import Personagem from './Personagem'
-import person from './data/person.js'
+import Person from './data/person.js'
+
+import './Hello.css'
 
 export default props =>{
     // props.match.params.id
@@ -13,11 +14,13 @@ export default props =>{
         <div>
             <h1>Episodio: {episodio.name}</h1>
             <h2>{episodio.air_date}</h2>
-            {episodio.character.map(character => (
-                <ul>
-                    <Personagem url={character}/>
-                </ul>
-            ))} 
+            <div className='album'>
+                {episodio.character.map(character => (
+                    <ul>
+                        <Person url={character}/>
+                    </ul>
+                ))} 
+            </div>
         </div>
         )
     } 

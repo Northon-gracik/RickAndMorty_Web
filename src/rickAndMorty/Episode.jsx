@@ -9,7 +9,7 @@ export default props => {
                 <h2>{props.eps.name}</h2>
                 <h2>Personagens: {props.eps.character.length}</h2> 
                 <h2>{props.eps.episode}</h2>
-                <a href="/episodios"/>
+                <a href={`/episodios/${props.eps.id}`}><p>Veja Mais</p></a>
             </div>
         </div>
     )

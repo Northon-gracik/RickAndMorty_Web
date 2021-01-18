@@ -1,16 +1,12 @@
 import axios from 'axios'
+import { useState } from 'react';
 
 
-export default async props => {
-    var per = (async function obterPerson() {
-        const resp = await axios.get(`https://rickandmortyapi.com/api/character/1`)
-        return resp.data
-    })()   
-    window.alert('') 
-    setTimeout(() => {
-        
-    }, 1000);
-    return <div><p>{per}</p></div>;
+export default (props) => {
+    const [img, setImg] = useState('') 
+    axios.get(`${props.url}`)
+        .then(resp => setImg(resp.data.image))
+    return <div><img src={img} height={150} /></div>;
 }
         
   
