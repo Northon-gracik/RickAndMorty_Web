@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from './data/axios'
 import episodios from './data/episodios'
-import Person from './data/person.js'
+import Person from './person'
 
 import './Hello.css'
 
