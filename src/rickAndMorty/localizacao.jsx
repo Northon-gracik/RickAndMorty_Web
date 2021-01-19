@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default props => {
+export default ({loc}) => {
     return(
         <div>
-            <p>{props.loc.name}</p>
+            <p>{loc.name}</p>
+            <p>{loc.residents.length}</p>
         </div>
     )
 }
