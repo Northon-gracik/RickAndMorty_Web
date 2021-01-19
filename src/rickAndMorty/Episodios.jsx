@@ -11,7 +11,6 @@ export default (props) => {
 
     axios.get('https://rickandmortyapi.com/api/episode/?page=1')
         .then(resp => setEpisodios(resp.data.results))
-        .catch(err => alert(err))
 
     return(
             <div className="s">
