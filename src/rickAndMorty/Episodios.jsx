@@ -6,7 +6,7 @@ import './episode.css'
 import Episode from './Episode';
 import Episodios from './data/episodios'
 
-export default (props) => {
+export default props => {
     
     return(
             <div className="s">
