@@ -9,7 +9,6 @@ export default props =>{
     // props.match.params.id
     var episodio = episodios.filter(episodio => episodio.id == props.match.params.id)[0]
     
-    
     return (
         <div>
             <h1>Episodio: {episodio.name}</h1>
