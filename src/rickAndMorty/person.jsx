@@ -9,7 +9,7 @@ export default (props) => {
     return (
         <div>
             <img src={person.image} height={150} />
-            <p>{JSON.stringify(person.name)}</p>
+            <p>{person.name}</p>
         </div>
         )
 }
