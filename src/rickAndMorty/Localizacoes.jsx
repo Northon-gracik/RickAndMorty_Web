@@ -13,9 +13,7 @@ export default props => {const axios = require('axios');
     return(
             <div className="s"> 
                 <div >
-                    {eps.map(ep => {
-                        return <div>{ep.name}</div>
-                    })}
+                    {eps.map(ep => <div>{ep.name}</div>)}
                     
                 </div>
             </div>
