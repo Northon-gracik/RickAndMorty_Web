@@ -2,14 +2,14 @@ import React from 'react'
 
 import './episode.css'
 
-export default props => {
+export default ({eps}) => {
     return(
         <div className="container">
             <div className="view">
-                <h2>{props.eps.name}</h2>
-                <h2>Personagens: {props.eps.character.length}</h2> 
-                <h2>{props.eps.episode}</h2>
-                <a href={`/episodios/${props.eps.id}`}><p>Veja Mais</p></a>
+                <h2>{eps.name}</h2>
+                <h2>Personagens: {eps.characters.length}</h2> 
+                <h2>{eps.episode}</h2>
+                <a href={`/episodios/${eps.id}`}><p>Veja Mais</p></a>
             </div>
         </div>
     )
