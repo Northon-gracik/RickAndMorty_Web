@@ -2,10 +2,10 @@ import axios from 'axios'
 import { useState } from 'react';
 
 
-export default (props) => {
+export default (props, {url}) => {
     const [person, setPerson] = useState([]) 
 
-    axios.get(`${props.url}`)
+    axios.get(`${url}`)
         .then(resp => setPerson(resp.data))
         
     return (
