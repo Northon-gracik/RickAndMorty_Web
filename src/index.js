@@ -11,6 +11,7 @@ import Footer from './Footer';
 import Episodios from './rickAndMorty/Episodios';
 import EpisodeSingle from './rickAndMorty/EpisodeSingle';
 import Personagens from './rickAndMorty/personagens';
+import PersonagemSingle from './rickAndMorty/PersongemSingle';
 
 
 ReactDOM.render(
@@ -22,6 +23,7 @@ ReactDOM.render(
             <Route exact path="/episodios/:id" component={EpisodeSingle}/>
             <Route exact path="/localizacoes" component={Localizacoes}/>
             <Route exact path="/personagens" component={Personagens}/>
+            <Route exact path="/personagens/:id" component={PersonagemSingle}/>
         </Switch>
         <Footer/>
     </BrowserRouter>,
