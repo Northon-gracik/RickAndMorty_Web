@@ -1,12 +1,12 @@
 import React from 'react'
 import axios from 'axios'
-import person from './data/person.js'
 
-export default props => {
+export default ({person}) => {
     
     return (
         <div>
-            <person/>
+            <p>{person.name}</p>
+            <p>{person.location}</p>
         </div>
     )
 }
