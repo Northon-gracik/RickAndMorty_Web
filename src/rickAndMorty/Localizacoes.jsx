@@ -6,7 +6,7 @@ export default props => {const axios = require('axios');
 
 
     (async () => {
-        const teste = await axios.get(`https://rickandmortyapi.com/api/episode?page=${1}`)
+        const teste = await axios.get(`https://rickandmortyapi.com/api/location?page=${1}`)
         setEps(teste.data.results)
     })()
 
