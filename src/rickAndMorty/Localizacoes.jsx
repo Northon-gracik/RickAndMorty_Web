@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 
 import Localizacao from './localizacao'
 
-export default props => {const axios = require('axios');
+export default props => {
+    const axios = require('axios');
 
     const [eps, setEps] = useState([]);
  
