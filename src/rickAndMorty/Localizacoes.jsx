@@ -13,7 +13,6 @@ export default props => {const axios = require('axios');
             <div className="s"> 
                 <div >
                     {eps.map(ep => <Localizacao key={ep.id} loc={ep}/>)}
-                    
                 </div>
             </div>
 )
