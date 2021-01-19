@@ -9,8 +9,6 @@ export default props => {const axios = require('axios');
     axios.get(`https://rickandmortyapi.com/api/location?page=${1}`)
     .then(resp => setEps(resp.data.results))
     
-    
-
     return(
             <div className="s"> 
                 <div >
