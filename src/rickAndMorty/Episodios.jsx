@@ -1,18 +1,22 @@
 import React, { useState } from 'react'
-import axios from 'axios'
 
 import './episode.css'
 
 import Episode from './Episode';
-import Episodios from './data/episodios'
 
 export default props => {
-    
+    const axios = require('axios');
+
+    const [episodios, setEpisodios] = useState([])
+
+    axios.get('https://rickandmortyapi.com/api/episode/?page=1')
+        .then(resp => setEpisodios(resp.data.results))
+
     return(
             <div className="s">
                 <div >
-                    {Episodios.map(ep => <Episode key={ep.id} eps={ep}/>)}
-                </div>
+                    {episodios.map(ep => <Episode key={ep.id} eps={ep}/>)}
+                </div> 
             </div>
     )
  }
