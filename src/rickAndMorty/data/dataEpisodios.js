@@ -6,4 +6,6 @@ export default () => {
 
     axios.get('https://rickandmortyapi.com/api/episode/?page=1')
         .then(resp => setEpisodios(resp.data.results))
+    
+    if(episodios.length() > 0) {return episodios}
 }
