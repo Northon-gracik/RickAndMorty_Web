@@ -5,6 +5,7 @@ export default ({loc}) => {
         <div>
             <p>{loc.name}</p>
             <p>{loc.residents.length}</p>
+            <br/>
         </div>
     )
 }
