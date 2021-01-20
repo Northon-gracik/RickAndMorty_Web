@@ -16,7 +16,8 @@ export default props => {
             <h1>Personagem: {personagem.name}</h1>
             <img src={personagem.image} />
             <p>{personagem.species} - {personagem.status} - {personagem.gender} {personagem.type}</p>
-            {personagem.episode.map(eps => <Eps eps={eps}/>)}
+            {/* {personagem.episode.map(eps => <Eps eps={eps}/>)}  */}
+            <p>{personagem.episode[0]}</p>
         </div>
     )
 }
