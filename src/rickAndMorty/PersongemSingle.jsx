@@ -12,6 +12,7 @@ export default props => {
     return (
         <div>
             <h1>Personagem: {personagem.name}</h1>
+            <img src={personagem.image} />
             <p>{personagem.species} - {personagem.status} - {personagem.gender} {personagem.type}</p>
             
         </div>
