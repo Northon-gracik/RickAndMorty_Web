@@ -9,7 +9,7 @@ export default ({person}) => {
             <p>{person.name}</p>
             <p>{person.location.name}</p>
             <p> {person.species}</p>
-            <a href=""></a>
+            <a href={`/personagens/${person.id}`}>Veja mais</a>
             <br/>
         </div>
     )
