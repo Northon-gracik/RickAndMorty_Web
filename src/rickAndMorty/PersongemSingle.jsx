@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import Eps from './eps'
+
 export default props => {
     const axios = require('axios');
 
@@ -14,7 +16,7 @@ export default props => {
             <h1>Personagem: {personagem.name}</h1>
             <img src={personagem.image} />
             <p>{personagem.species} - {personagem.status} - {personagem.gender} {personagem.type}</p>
-            
+            {personagem.episode.map(eps => <Eps eps={eps}/>)}
         </div>
     )
 }
