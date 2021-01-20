@@ -14,11 +14,7 @@ export default props =>{
             <h1>Episodio: {episodio.name}</h1>
             <h2>{episodio.air_date}</h2>
             <div className='album'>
-                {episodio.character.map(character => (
-                    <ul>
-                        <Person url={character}/>
-                    </ul>
-                ))} 
+                {episodio.character.map(character => <Person url={character}/>)} 
             </div>
         </div>
         )
