@@ -10,6 +10,8 @@ export default props => {
     axios.get(`https://rickandmortyapi.com/api/character/${props.match.params.id}`)
         .then(resp => setPersonagem(resp.data))
 
+    alert(JSON.stringify(personagem.episode))
+
 
     return (
         <div>
