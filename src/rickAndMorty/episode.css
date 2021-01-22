@@ -1,12 +1,12 @@
 .view{
     background-color: gray;
     margin-vertical: 3px; 
-    height: 150px;
+    height: 175px;
     border-radius: 15px;
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    width: 300px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -25,5 +25,9 @@
     flex-grow: 1;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start
+    justify-content: space-between;
+}
+
+.fotos{
+    margin:20px;
 }
