@@ -5,11 +5,14 @@ export default props => {
 
     const [nome, setNome] = useState('')
 
+
+
     useEffect(() => {
         axios.get(`${props.url}`)
-            .then(resp => JSON.stringify(resp.data.name))
+            .then(resp => setNome(resp.data.name))
             .catch(err => alert(err))
     },[])
+
     return (
         <div>
             <p>{nome}</p>
