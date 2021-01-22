@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import './episode.css'
 
-export default (props, {url}) => {
+export default (props) => {
     const [person, setPerson] = useState([]) 
 
     useEffect(() => {
@@ -14,7 +14,7 @@ export default (props, {url}) => {
         
     return (
         <div className="fotos">
-            <img src={person.image} height={150} width={150} />
+            <img src={person.image} height={150} width={150}  />
             <p>{person.name}</p>
         </div>
         )
