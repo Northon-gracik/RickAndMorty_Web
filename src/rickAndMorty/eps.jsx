@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default props => {
     const axios = require('axios');
 
-    const [nome, setNome] = useState([])
+    const [nome, setNome] = useState('')
 
-    axios.get(`${props.url}`)
-        .then(resp => setNome(resp.data.name))
-
+    useEffect(() => {
+        axios.get(`${props.url}`)
+            .then(resp => JSON.stringify(resp.data.name))
+            .catch(err => alert(err))
+    },[])
     return (
         <div>
             <p>{nome}</p>
