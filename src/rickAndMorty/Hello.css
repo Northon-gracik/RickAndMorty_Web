@@ -27,3 +27,16 @@
         justify-content: center;
     
 }
+
+.space{
+    margin: 15px;
+}
+
+.container{
+    background-color: #808080;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 15px
+}
