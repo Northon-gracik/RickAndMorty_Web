@@ -1,16 +1,20 @@
 import axios from 'axios'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
+import './episode.css'
 
 export default (props, {url}) => {
     const [person, setPerson] = useState([]) 
 
-    axios.get(`${url}`)
-        .then(resp => setPerson(resp.data))
+    useEffect(() => {
+        axios.get(`${props.url}`)
+            .then(resp => setPerson(resp.data))
+    },[])
+    
         
     return (
-        <div>
-            <img src={person.image} height={150} />
+        <div className="fotos">
+            <img src={person.image} height={150} width={150} />
             <p>{person.name}</p>
         </div>
         )
