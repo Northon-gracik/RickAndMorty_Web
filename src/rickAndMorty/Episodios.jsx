@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './episode.css'
 
@@ -9,8 +9,12 @@ export default props => {
 
     const [episodios, setEpisodios] = useState([])
 
-    axios.get('https://rickandmortyapi.com/api/episode/?page=1')
-        .then(resp => setEpisodios(resp.data.results))
+    useEffect(() => {
+        axios.get('https://rickandmortyapi.com/api/episode/?page=1')
+            .then(resp => setEpisodios(resp.data.results))    
+    },[])
+
+
 
     return(
             <div className="s">
