@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 import Localizacao from './localizacao'
 
+import './Hello.css'
+
 export default props => {
     const axios = require('axios');
 
@@ -11,8 +13,8 @@ export default props => {
     .then(resp => setEps(resp.data.results))
     
     return(
-            <div className="s"> 
-                <div >
+            <div> 
+                <div  className="album">
                     {eps.map(ep => <Localizacao key={ep.id} loc={ep}/>)}
                 </div>
             </div>
