@@ -22,7 +22,7 @@ export default props => {
             <h1>Personagem: {personagem.name}</h1>
             <img src={personagem.image} />
             <p>{personagem.species} - {personagem.status} - {personagem.gender} {personagem.type}</p>
-            {episodio.map(eps => <Eps key={ke++} eps={eps}/>)}
+            {episodio.map(eps => <Eps key={ke++} url={eps}/>)}
         </div>
     )
 }
