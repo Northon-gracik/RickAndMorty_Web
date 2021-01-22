@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 
 import Personagem from './Personagem'
 
+import './Hello.css'
+
 export default props =>{
     const axios = require('axios');
 
@@ -13,7 +15,7 @@ export default props =>{
     },[])
 
     return(
-        <div> {personagem.map(person => <Personagem key={person.id} person={person}/>)} </div>
+        <div className="album"> {personagem.map(person => <Personagem key={person.id} person={person}/>)} </div>
     )
     
 }
