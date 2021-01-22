@@ -3,3 +3,4 @@
 [0121/223721.794:ERROR:process_info.cc(359)] UncheckedAllocate
 [0121/223721.860:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\north\AppData\Local\Google\Chrome\User Data\Crashpad\reports\036bc73f-5b8d-4a9b-93f7-0fca1a0eea2e.dmp: O arquivo já está sendo usado por outro processo. (0x20)
 [0122/120741.814:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[0122/143341.874:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
