@@ -1,21 +1,36 @@
-import React from 'react'
-import axios from './data/axios'
-import episodios from './data/episodios'
+import React, { useEffect, useState } from 'react'
 import Person from './person'
+
+import eps from './data/episodios'
 
 import './Hello.css'
 
-export default props =>{
+export default props => {
     // props.match.params.id
-    var episodio = episodios.filter(episodio => episodio.id == props.match.params.id)[0]
-    
+    const axios = require('axios');
+
+    const [episodio, setEpisodio] = useState([])
+
+    const [characters, setCharacters] = useState([])
+
+    useEffect(() => {
+        axios.get(`https://rickandmortyapi.com/api/episode/${props.match.params.id}`)
+            .then(resp => setEpisodio(resp.data))
+
+        axios.get(`https://rickandmortyapi.com/api/episode/${props.match.params.id}`)
+            .then(resp => setCharacters(resp.data.characters))
+    },[])
+
+
+
+
     return (
         <div>
             <h1>Episodio: {episodio.name}</h1>
             <h2>{episodio.air_date}</h2>
             <div className='album'>
-                {episodio.character.map(character => <Person url={character}/>)} 
-            </div>
+                {characters.map(character => <Person url={character}/>)}
+            </div> {/* album */}
         </div>
         )
-    } 
+    }
