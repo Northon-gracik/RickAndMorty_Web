@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import './episode.css'
+import './Hello.css'
 
 import Episode from './Episode';
 
@@ -17,10 +17,8 @@ export default props => {
 
 
     return(
-            <div className="s">
-                <div >
-                    {episodios.map(ep => <Episode key={ep.id} eps={ep}/>)}
-                </div> 
+            <div className="album">
+                {episodios.map(ep => <Episode key={ep.id} eps={ep}/>)}
             </div>
     )
  }
