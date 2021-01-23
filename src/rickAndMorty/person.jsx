@@ -15,7 +15,7 @@ export default (props) => {
     return (
         <div className="fotos">
             <img src={person.image} height={150} width={150}  />
-            <p>{person.name}</p>
+            <a href={`/personagens/${person.id}`}>{person.name}</a>
         </div>
         )
 }
