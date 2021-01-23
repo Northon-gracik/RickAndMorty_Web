@@ -1,10 +1,11 @@
 import React from 'react'
 
 import './Hello.css'
+import './episode.css'
 
 export default ({loc}) => {
     return(
-        <div className='container'>
+        <div className='view2'>
             <p>{loc.name}</p>
             <p>{loc.residents.length}</p>
             <p>{loc.type}</p>
