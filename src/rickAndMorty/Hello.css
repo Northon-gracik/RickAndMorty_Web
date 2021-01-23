@@ -20,11 +20,11 @@
 
 .album{
     
-        display: inline-flex;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
+    display: inline-flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     
 }
 
@@ -37,6 +37,9 @@
     margin: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 200px;
-    border-radius: 15px
+    border-radius: 15px;
+    height: 250px;
 }
