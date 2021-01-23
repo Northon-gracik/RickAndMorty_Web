@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
+import './Hello.css'
+
 export default props => {
     const axios = require('axios');
 
@@ -9,13 +11,16 @@ export default props => {
 
     useEffect(() => {
         axios.get(`${props.url}`)
-            .then(resp => setNome(resp.data.name))
+            .then(resp => setNome(resp.data))
             .catch(err => alert(err))
     },[])
 
     return (
-        <div>
-            <p>{nome}</p>
+        <div className="album">
+            <div className='space'>
+                <a href={`/episodios/${nome.id}`}> {nome.name} </a>
+            </div>
+            
         </div>
     )
 }
