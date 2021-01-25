@@ -20,7 +20,7 @@ ReactDOM.render(
         <NavBar/>
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/episodios" component={Episodios}/>
+            <Route exact path="/episodios/:id" component={Episodios}/>
             <Route exact path="/episodios/:id" component={EpisodeSingle}/>
             <Route exact path="/localizacoes" component={Localizacoes}/>
             <Route exact path="/localizacoes/:id" component={LocalizacoesSingle}/> 
