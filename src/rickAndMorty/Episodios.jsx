@@ -9,18 +9,22 @@ export default props => {
 
     const [episodios, setEpisodios] = useState([])
     const [info, setInfo] = useState([])
+    
+    var pag = props.match.params.id || 1
+    
 
     useEffect(() => {
-        axios.get('https://rickandmortyapi.com/api/episode/?page=1')
+        axios.get(`https://rickandmortyapi.com/api/episode?page=${props.match.params.id}`)
             .then(resp => setEpisodios(resp.data.results))    
-        
-        axios.get(`https://rickandmortyapi.com/api/episode/?page=1`)
-            .then(resp => {setInfo(resp.data.info)
-                alert(JSON.stringify(info))})
 
+        axios.get(`https://rickandmortyapi.com/api/episode`)
+            .then(resp => resp.data.info.pages)
+            .then(resp => alert(resp))
+        
         
     },[])
-
+    
+    
 
 
     return(
