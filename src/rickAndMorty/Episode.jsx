@@ -8,7 +8,7 @@ export default ({eps}) => {
             <h2>{eps.name}</h2>
             <h2>{eps.characters.length} Personagens</h2> 
             <h2>{eps.episode}</h2>
-            <a href={`/episodios/${eps.id}`}><p>Veja Mais</p></a>
+            <a href={`/episodio/${eps.id}`}><p>Veja Mais</p></a>
         </div>
     )
  }
