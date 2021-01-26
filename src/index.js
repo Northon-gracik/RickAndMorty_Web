@@ -21,11 +21,11 @@ ReactDOM.render(
         <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/episodios/:id" component={Episodios}/>
-            <Route exact path="/episodios/:id" component={EpisodeSingle}/>
-            <Route exact path="/localizacoes" component={Localizacoes}/>
-            <Route exact path="/localizacoes/:id" component={LocalizacoesSingle}/> 
-            <Route exact path="/personagens" component={Personagens}/>
-            <Route exact path="/personagens/:id" component={PersonagemSingle}/>
+            <Route exact path="/episodio/:id" component={EpisodeSingle}/>
+            <Route exact path="/localizacoes/:id" component={Localizacoes}/>
+            <Route exact path="/localizacao/:id" component={LocalizacoesSingle}/> 
+            <Route exact path="/personagens/:id" component={Personagens}/>
+            <Route exact path="/personagem/:id" component={PersonagemSingle}/>
         </Switch>
         <Footer/>
     </BrowserRouter>,
