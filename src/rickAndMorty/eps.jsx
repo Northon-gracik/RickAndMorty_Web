@@ -7,8 +7,6 @@ export default props => {
 
     const [nome, setNome] = useState('')
 
-
-
     useEffect(() => {
         axios.get(`${props.url}`)
             .then(resp => setNome(resp.data))
@@ -18,7 +16,7 @@ export default props => {
     return (
         <div className="album">
             <div className='space'>
-                <a href={`/episodios/${nome.id}`}> {nome.name} </a>
+                <a href={`/episodio/${nome.id}`}> {nome.name} </a>
             </div>
             
         </div>
