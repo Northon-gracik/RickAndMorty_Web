@@ -9,8 +9,8 @@ export default props => {
 
     const [episodios, setEpisodios] = useState([])
     const [info, setInfo] = useState([])
-    
-    var pag = props.match.params.id || 1
+
+    var key = [];
     
 
     useEffect(() => {
@@ -19,17 +19,25 @@ export default props => {
 
         axios.get(`https://rickandmortyapi.com/api/episode`)
             .then(resp => resp.data.info.pages)
-            .then(resp => alert(resp))
-        
+            .then(resp => setInfo(resp))
+
         
     },[])
     
-    
+    for(var i = 0; i < info; i++){
+            key.push(i + 1)
+        }
 
 
     return(
+        <div style={{display: 'flex', flex: 1 , flexDirection: 'column'}}>
             <div className="album">
                 {episodios.map(ep => <Episode key={ep.id} eps={ep}/>)}
             </div>
+            <div className="album">
+                {key.map(key => <a href={`/episodios/${key}`} className="space" >{key}</a>)}
+            </div>
+        </div>
+            
     )
  }
